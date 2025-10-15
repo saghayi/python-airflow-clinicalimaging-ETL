@@ -13,10 +13,12 @@ The pipeline extracts metadata, performs validation, converts formats, and prepa
 - Airflow DAG orchestration
 
 ## Folder Structure
+```pgsql
 python-airflow-clinical-imaging-ETL/
 │
 ├── README.md                     ← project overview
 ├── requirements.txt              ← Python dependencies
+│
 ├── airflow/
 │   └── dags/
 │       └── dicom_ingestion_dag.py  ← Airflow DAG for automation
@@ -25,6 +27,7 @@ python-airflow-clinical-imaging-ETL/
 │   ├── dicom_ingestion.py         ← raw ingestion script
 │   ├── dicom_qc.py                ← QC and metadata validation
 │   └── dicom_convert_nifti.py     ← convert DICOM → NIfTI
+│   └── utils.py                    ← helper functions (logging, metadata, etc.)
 │
 ├── data/
 │   ├── raw/                       ← raw DICOM data (sample or dummy)
@@ -33,3 +36,5 @@ python-airflow-clinical-imaging-ETL/
 │
 └── notebooks/
     └── analyze_metadata.ipynb     ← Jupyter notebook for EDA or visualization
+
+```
