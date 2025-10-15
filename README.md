@@ -5,6 +5,14 @@ A Python + Apache Airflow pipeline for ingesting, curating, and performing QC on
 A Python and Apache Airflow-based workflow for ingesting, curating, and performing QC on medical imaging data (DICOM/NIfTI).
 The pipeline extracts metadata, performs validation, converts formats, and prepares data for ML or research analysis.
 
+## Features
+- Automated ingestion of DICOM files
+- Metadata extraction and QC validation
+- Conversion to NIfTI format for research/ML workflows
+- Optional AWS S3 integration
+- Airflow DAG orchestration
+
+## Folder Structure
 python-airflow-clinical-imaging-ETL/
 │
 ├── README.md                     ← project overview
