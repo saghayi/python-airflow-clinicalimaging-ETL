@@ -1,0 +1,6 @@
+pydicom
+nibabel
+pandas
+boto3
+apache-airflow
+matplotlib
